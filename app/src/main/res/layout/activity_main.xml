@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCalculater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="calculater"
+        android:textSize="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/cardview_default_radius"
+        android:textColor="@color/cardview_dark_background"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter Number"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+     <Button
+         android:id="@+id/btn_add"
+         android:text="+"
+         android:textSize="20dp"
+         android:layout_marginEnd="2dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="-"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btn_multiply"
+            android:text="*"
+            android:textSize="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_modulas"
+            android:text="/"
+            android:textSize="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_equals"
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:minWidth="48dp"
+            android:text="="
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+    <TextureView
+        android:id="@+id/Answer"
+        android:layout_width="41dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
